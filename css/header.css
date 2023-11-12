@@ -23,6 +23,10 @@ header .logo img{
     width: 2.6rem;
 }
 
+header .logo{
+    padding: 2vh;
+}
+
 header .logo img:hover{
     transition: 0.4s;
     transform: scale(1.05);
