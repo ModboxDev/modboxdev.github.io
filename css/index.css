@@ -215,9 +215,23 @@
 
 /*Mobile*/
 
+@media screen and (max-width: 1000px){
+    .grafico{
+        width: 23em;
+    }
+}
+
 @media screen and (max-width: 800px){
     .img-text{
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grafico{
+        width: 60%;
+    }
+    
+    .grafico canvas{
+        width: 7em;
     }
 }
 
@@ -230,6 +244,10 @@
 
 @media screen and (max-width: 500px){
   
+    .grafico{
+        width: 80%;
+    }
+
     .textos{
         display: inline;
         width: 60%;
