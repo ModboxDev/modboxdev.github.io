@@ -45,6 +45,8 @@ header .menu a:hover{
 
 /*Fin del Header*/
 
+/* Old content (? */
+
 .texto{
     width: 60%;
     padding: 4.5vh;
@@ -67,6 +69,54 @@ header .menu a:hover{
     color: var(--colorFuente2);
 }
 
+/* Fin Old content (? */
+
+/* New content */
+
+.card-grid{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 20vw 20vw 20vw;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.5vw;
+}
+
+.card{
+    display: grid;
+    justify-items: center;
+    border-radius: 25px;
+}
+
+.nombre{
+    margin-top: .5vw;
+    color: #fff;
+}
+
+.marco{
+    width: 16vw;
+    height: 16vw;
+    background-image: linear-gradient(160deg, #f7f 0%, #f0f 100%);
+    border-radius: 100%;
+    filter: blur(6px);
+    z-index: -1;
+}
+
+.pfp{
+    width: 15vw;
+    height: 15vw;
+    border-radius: 100%;
+    object-fit: cover;
+    margin: .5vw;
+    margin-top: -15.5vw;
+}
+
+.funcion{
+    margin-top: -1vw;
+    color: #fff;
+}
+
+/* Fin New content */
+
 /*Footer - pie de pagina*/
 
 .container-footer{
@@ -85,4 +135,32 @@ header .menu a:hover{
     font-size: medium;
     color: #8e8e8e;
     font-weight: 500;
+}
+
+@media(max-width:768px){
+
+    .card-grid{
+        grid-template-columns: 70vw;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 3vh;
+    }
+
+    .marco{
+        width: 55vw;
+        height: 55vw;
+        background-image: linear-gradient(160deg, #f7f 0%, #f0f 100%);
+        border-radius: 100%;
+        filter: blur(6px);
+        z-index: -1;
+    }
+
+    .pfp{
+        width: 50vw;
+        height: 50vw;
+        border-radius: 100%;
+        object-fit: cover;
+        margin: .5vw;
+        margin-top: -52.5vw;
+    }
+
 }
